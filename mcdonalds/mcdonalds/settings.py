@@ -28,8 +28,6 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-yoxoc0vqmva&l4
 DEBUG = True
 DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
 
-import dj_database_url
-db_from_env = dj_database_url.config(conn_max_age=500)
 
 ALLOWED_HOSTS = []
 
