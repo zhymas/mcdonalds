@@ -1,0 +1,57 @@
+/* Стили для контейнера окна ордеров */
+div {
+  border: 2px solid #f3f3f3;
+  background-color: #fff;
+  padding: 10px;
+  width: 300px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Стили для статуса "Wait" */
+.create-status p {
+  font-size: 20px;
+  color: #ff0000;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Стили для статуса "Ready" */
+.ready-status p {
+  font-size: 20px;
+  color: #00ff00;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Стили для ордеров в статусе "Wait" */
+.wait-order {
+  list-style-type: none;
+  padding: 0;
+}
+
+.wait-order li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+/* Стили для ордеров в статусе "Ready" */
+.ready-order {
+  list-style-type: none;
+  padding: 0;
+}
+
+.ready-order li {
+  font-size: 16px;
+  margin-bottom: 5px;
+  text-decoration: line-through; /* Добавляем линию через выполненные ордеры */
+  color: #888;
+}
+
+div a{
+  color: black;
+  display: block;
+  margin: 5px;
+}
