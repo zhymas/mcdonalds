@@ -81,10 +81,15 @@ WSGI_APPLICATION = 'mcdonalds.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',  # Путь к файлу SQLite базы данных
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres', 
+        'USER': 'postgres',  
+        'PASSWORD': 'postgres',  
+        'HOST': 'localhost',  
+        'PORT': '8083',  
     }
 }
+
 
 
 # Password validation
